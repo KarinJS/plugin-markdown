@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/KarinJS/plugin-markdown/compare/v1.1.0...v1.1.1) (2025-05-21)
+
+
+### Bug Fixes
+
+* 修复web.conig不生效的问题 ([e705485](https://github.com/KarinJS/plugin-markdown/commit/e70548529ad036ecd2ffacd711807781a7775d20))
+
 ## [1.1.0](https://github.com/KarinJS/plugin-markdown/compare/v1.0.0...v1.1.0) (2025-05-21)
 
 
