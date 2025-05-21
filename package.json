@@ -45,7 +45,7 @@
     "files": [
       "config"
     ],
-    "web": "dist/web.config.mjs",
+    "web": "dist/web.config.js",
     "ts-web": "src/web.config.ts"
   },
   "files": [

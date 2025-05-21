@@ -34,6 +34,9 @@ jobs:
         with:
           version: 9
         if: ${{ steps.release.outputs.release_created }}
+      # 安装依赖
+      - run: pnpm install
+        if: ${{ steps.release.outputs.release_created }}
       # 编译
       - run: pnpm run build
         if: ${{ steps.release.outputs.release_created }}
