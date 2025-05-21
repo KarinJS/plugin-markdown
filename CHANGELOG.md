@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/KarinJS/plugin-markdown/compare/v1.0.0...v1.1.0) (2025-05-21)
+
+
+### Features
+
+* 1.1.0 ([68fde78](https://github.com/KarinJS/plugin-markdown/commit/68fde786a368d48cda138ce6169d356b5b8ecb30))
+
 ## 1.0.0 (2025-05-21)
 
 
