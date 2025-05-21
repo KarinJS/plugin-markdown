@@ -1,0 +1,58 @@
+{
+  "name": "@karinjs/plugin-markdown",
+  "version": "1.0.0",
+  "author": "shijin",
+  "type": "module",
+  "description": "markdown plugin for karin",
+  "homepage": "https://github.com/KarinJS/plugin-markdown",
+  "bugs": {
+    "url": "https://github.com/KarinJS/plugin-markdown/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarinJS/plugin-markdown.git"
+  },
+  "scripts": {
+    "app": "tsx src/app.ts",
+    "build": "tsc && tsup",
+    "dev": "cross-env EBV_FILE=\"development.env\" node --import tsx src/app.ts",
+    "pub": "npm publish --access public"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@karinjs/md-html": "^1.2.1",
+    "@karinjs/plugin-puppeteer": "^1.0.16",
+    "@types/express": "^5.0.2",
+    "@types/lodash": "^4.17.17",
+    "@types/node": "^20.17.50",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.27.0",
+    "neostandard": "^0.11.9",
+    "node-karin": "^1.9.5",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "karin": {
+    "main": "src/index.ts",
+    "apps": [
+      "dist/apps"
+    ],
+    "ts-apps": [
+      "src/apps"
+    ],
+    "static": [],
+    "files": [
+      "config"
+    ],
+    "web": "dist/web.config.mjs",
+    "ts-web": "src/web.config.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
