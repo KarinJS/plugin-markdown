@@ -29,14 +29,19 @@ jobs:
           # 设置 npm 注册表 URL
           registry-url: https://registry.npmjs.org
         if: ${{ steps.release.outputs.release_created }}
+      # 安装 pnpm
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 9
+        if: ${{ steps.release.outputs.release_created }}
       # 编译
-      - run: npm run build
+      - run: pnpm run build
         if: ${{ steps.release.outputs.release_created }}
       # 删除开发依赖
-      - run: npm pkg delete devDependencies
+      - run: pnpm pkg delete devDependencies
         if: ${{ steps.release.outputs.release_created }}
       # 发布带npm
-      - run: npm run pub
+      - run: pnpm run pub
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.release.outputs.release_created }}
